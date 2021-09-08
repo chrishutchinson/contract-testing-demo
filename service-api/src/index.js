@@ -4,6 +4,8 @@ const { users } = require("./fixtures/users");
 const app = express();
 
 app.get("/api/users", (req, res) => {
+  console.log("DEBUG: Incoming request for user list");
+
   res.statusCode = 200;
   res.json({
     data: users,
@@ -11,6 +13,8 @@ app.get("/api/users", (req, res) => {
 });
 
 app.get("/api/users/:id", (req, res) => {
+  console.log("DEBUG: Incoming request for user by ID", Number(req.params.id));
+
   const user = users.find((user) => user.id === Number(req.params.id));
 
   if (!user) {

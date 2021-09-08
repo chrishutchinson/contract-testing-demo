@@ -1,5 +1,5 @@
 module.exports = {
   api: {
-    endpoint: "http://localhost:4000",
+    endpoint: "http://localhost:3000",
   },
 };

@@ -4,6 +4,6 @@ const { getUsers, getUserById } = require("./api/users");
 //   console.log(users);
 // });
 
-getUserById(1).then((user) => {
+getUserById(100).then((user) => {
   console.log(user);
 });

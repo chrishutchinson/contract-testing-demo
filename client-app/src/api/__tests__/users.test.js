@@ -7,6 +7,12 @@ const packageJson = require("../../../package.json");
 
 const { getUsers, getUserById } = require("../users");
 
+jest.mock("../../config", () => ({
+  api: {
+    endpoint: "http://localhost:4000",
+  },
+}));
+
 const provider = new Pact({
   consumer: packageJson.name,
   provider: "service-api",
