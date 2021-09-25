@@ -1,5 +1,9 @@
 # Contract Testing demo app
 
+>A sample system put together to demo contract testing via the [Pact](https://pact.io/) framework and broker.
+
+**Note:** This repository is archived and will not be actively maintained. Feel free to use it as a reference guide though!
+
 ## Client app
 
 The client app is a simple script that fetches data from the service API.
